@@ -23,7 +23,7 @@ func main() {
 func run() error {
 	site := os.Getenv("DD_SITE")
 	if site == "" {
-		site = "datadog.com"
+		site = "datadoghq.com"
 	}
 	var (
 		keyF     = flag.String("key", os.Getenv("DD_API_KEY"), "A Datadog API key for your account. Defaults to DD_API_KEY.")
