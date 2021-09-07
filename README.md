@@ -22,11 +22,11 @@ Usage of dd-prof-upload:
   -env string
     	The name of the environment to assign to the uploaded profiles. (default "dev")
   -key string
-    	A Datadog API key for your account. Defaults to DD_API_KEY. (default "")
+    	A Datadog API key for your account. Defaults to DD_API_KEY.
   -runtime string
     	The name of the runtime to attribute the profiles to. (default "go")
   -service string
     	The name of the service to assign for the uploaded profiles. (default "dd-prof-upload")
   -site string
-    	The datadog site to upload to. Defaults to DD_SITE or "datadog.com". (default "datadog.com")
+    	The datadog site to upload to. Defaults to DD_SITE or "datadog.com". (default "datadoghq.com")
 ```
