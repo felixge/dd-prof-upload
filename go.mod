@@ -1,3 +1,3 @@
-module github.com/felixge/felixge.de/dd-prof-upload
+module github.com/felixge/dd-prof-upload
 
 go 1.16
