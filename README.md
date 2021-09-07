@@ -6,7 +6,7 @@ Quick Start:
 
 ```
 # install
-go install github.com/felixge/dd-prof-upload/...@latest
+go install github.com/felixge/dd-prof-upload@latest
 
 # upload example propfiles
 export DD_API_KEY=...
