@@ -28,14 +28,14 @@ func run() error {
 	var (
 		keyF     = flag.String("key", os.Getenv("DD_API_KEY"), "A Datadog API key for your account. Defaults to DD_API_KEY.")
 		serviceF = flag.String("service", "dd-prof-upload", "The name of the service to assign for the uploaded profiles.")
-		siteF    = flag.String("site", site, `The datadog site to upload to. Defaults to DD_SITE or "datadog.com".`)
+		urlF     = flag.String("url", "https://intake.profile."+site+"/v1/input", "The URL to upload the profiles to. Uses DD_SITE or datadog.com as default.")
 		envF     = flag.String("env", "dev", "The name of the environment to assign to the uploaded profiles.")
 		runtimeF = flag.String("runtime", "go", "The name of the runtime to attribute the profiles to.")
 	)
 	flag.Parse()
 
 	u := Upload{
-		URL:    "https://intake.profile." + *siteF + "/v1/input",
+		URL:    *urlF,
 		ApiKey: *keyF,
 		Tags: []string{
 			"service:" + *serviceF,
